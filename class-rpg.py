@@ -28,9 +28,6 @@ for i in range(0, number_of_enemies):
 	else:
 		monsters.append(Vampire())
 
-print monsters
-
-
 # Run the game as long as BOTH characters have health (are alive)
 while goblin.is_alive() and hero.is_alive():
 	# game is on!
@@ -38,7 +35,7 @@ while goblin.is_alive() and hero.is_alive():
 	print "You have %d health and %d power." % (hero.health, hero.power)
 	print "The goblin has %d health and %d power." % (goblin.health, goblin.power)
 	print "What do you want to do?"
-	print "1. fight goblin"
+	print "1. fight %s" % monster.name 
  	print "2. do nothing"
  	print "3. flee"
  	print "> "
